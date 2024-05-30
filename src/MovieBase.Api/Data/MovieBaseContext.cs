@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MovieBase.Web.Data.Entities;
+using MovieBase.Api.Data.Entities;
 
-namespace MovieBase.Web.Data;
+namespace MovieBase.Api.Data;
 
 public class MovieBaseContext : DbContext
 {

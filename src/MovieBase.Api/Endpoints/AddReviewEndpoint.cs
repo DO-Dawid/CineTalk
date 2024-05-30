@@ -1,10 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MovieBase.Web.Data;
-using MovieBase.Web.Data.Entities;
+using MovieBase.Api.Data;
+using MovieBase.Api.Data.Entities;
 
-namespace MovieBase.Web.Endpoints;
+namespace MovieBase.Api.Endpoints;
 
 public class AddReviewEndpoint
 {
@@ -28,6 +28,7 @@ public class AddReviewEndpoint
                     MovieId = movieId,
                     ReviewerName = req.ReviewerName,
                     Rating = req.Rating,
+                    ReviewDetail = req.Details,
                     ReviewDate = DateTime.Now,
                     ReviewId = Guid.NewGuid().ToString()
                 });
@@ -35,6 +36,4 @@ public class AddReviewEndpoint
                 return Results.Created();
             });
     }
-
-    private record RequestReview(string ReviewerName, float Rating);
 }

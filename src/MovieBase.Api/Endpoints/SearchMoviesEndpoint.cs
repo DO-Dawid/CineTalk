@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MovieBase.Web.Data;
+using MovieBase.Api.Data;
 
-namespace MovieBase.Web.Endpoints;
+namespace MovieBase.Api.Endpoints;
 
 public static class SearchMoviesEndpoint
 {
@@ -48,13 +48,4 @@ public static class SearchMoviesEndpoint
             .WithName("SearchMovies")
             .WithOpenApi();
     }
-
-    private record ResponseMovie(
-        string MovieId,
-        string Title,
-        string Description,
-        DateTime ReleaseDate,
-        string Director,
-        float? AvgRating
-    );
 }

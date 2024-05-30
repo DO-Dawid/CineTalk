@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using MovieBase.Web.Data;
-using MovieBase.Web.Data.Entities;
+using MovieBase.Api.Data;
+using MovieBase.Api.Data.Entities;
 
-namespace MovieBase.Web.Endpoints;
+namespace MovieBase.Api.Endpoints;
 
 public class ShowReviewsEndpoint
 {
@@ -18,6 +18,7 @@ public class ShowReviewsEndpoint
                         x.ReviewId,
                         x.ReviewerName,
                         x.ReviewDate,
+                        x.ReviewDetail,
                         x.Rating
                     ));
             }
@@ -25,11 +26,4 @@ public class ShowReviewsEndpoint
             .WithName("ShowReviews")
             .WithOpenApi();
     }
-
-    private record ResponseReview(
-        string ReviewId,
-        string ReviewerName,
-        DateTime ReviewDate,
-        float Rating
-    );
 }

@@ -5,7 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6007C4D8-0D8B-4D88-92EE-80430E007ACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBase.Web", "src\MovieBase.Web\MovieBase.Web.csproj", "{2D1A823A-9FF2-4A06-90A2-4F053AA10D55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBase.Api", "src\MovieBase.Api\MovieBase.Api.csproj", "{2D1A823A-9FF2-4A06-90A2-4F053AA10D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBase.Web", "src\MovieBase.Web\MovieBase.Web.csproj", "{78E22E2A-6FF6-471A-8594-AB3A067B3A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieBase.Shared", "src\MovieBase.Shared\MovieBase.Shared.csproj", "{3A9249C3-8BC3-4036-9CBE-93FCFF60EAF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +24,18 @@ Global
 		{2D1A823A-9FF2-4A06-90A2-4F053AA10D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D1A823A-9FF2-4A06-90A2-4F053AA10D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D1A823A-9FF2-4A06-90A2-4F053AA10D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E22E2A-6FF6-471A-8594-AB3A067B3A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E22E2A-6FF6-471A-8594-AB3A067B3A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E22E2A-6FF6-471A-8594-AB3A067B3A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E22E2A-6FF6-471A-8594-AB3A067B3A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9249C3-8BC3-4036-9CBE-93FCFF60EAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9249C3-8BC3-4036-9CBE-93FCFF60EAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9249C3-8BC3-4036-9CBE-93FCFF60EAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9249C3-8BC3-4036-9CBE-93FCFF60EAF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2D1A823A-9FF2-4A06-90A2-4F053AA10D55} = {6007C4D8-0D8B-4D88-92EE-80430E007ACB}
+		{78E22E2A-6FF6-471A-8594-AB3A067B3A09} = {6007C4D8-0D8B-4D88-92EE-80430E007ACB}
+		{3A9249C3-8BC3-4036-9CBE-93FCFF60EAF7} = {6007C4D8-0D8B-4D88-92EE-80430E007ACB}
 	EndGlobalSection
 EndGlobal

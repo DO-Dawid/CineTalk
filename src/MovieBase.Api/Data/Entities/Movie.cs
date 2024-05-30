@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace MovieBase.Web.Data.Entities;
+namespace MovieBase.Api.Data.Entities;
 
 public class Movie
 {

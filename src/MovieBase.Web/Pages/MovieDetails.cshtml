@@ -1,0 +1,34 @@
+@page "/movies/{movieId}"
+@model MovieBase.Web.Pages.MovieDetails
+
+<div>
+    @Model.MovieId
+    <form method="post">
+        <label asp-for="ReviewerName"></label>
+        <input asp-for="ReviewerName"/>
+        <label asp-for="Rating"></label>
+        <input asp-for="Rating" type="number" min="0" max="5" step="0.1"/>
+        <label asp-for="Details"></label>
+        <input asp-for="Details"/>
+        <button type="submit">Zapisz</button>
+    </form>
+    <ul>
+        @foreach (var review in Model.Reviews)
+        {
+            <li>
+                <div>@review.ReviewDate</div>
+                <div>@review.ReviewDetail</div>
+                <div>@review.ReviewerName</div>
+                <div>@review.Rating</div>
+                <form method="post" asp-page-handler="DeleteReview">
+                    <input type="hidden" name="reviewId" value="@review.ReviewId" />
+                    <input type="hidden" name="movieId" value="@Model.MovieId" />
+                    @Html.AntiForgeryToken()
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        }
+    </ul>
+</div>
+
+
