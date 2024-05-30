@@ -22,6 +22,7 @@ app.UseHttpsRedirection();
 
 SearchMoviesEndpoint.Map(app);
 ShowReviewsEndpoint.Map(app);
+AddReviewEndpoint.Map(app);
 
 using (var scope = app.Services.CreateScope())
 {
