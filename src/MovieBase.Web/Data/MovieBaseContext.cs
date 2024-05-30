@@ -16,4 +16,5 @@ public class MovieBaseContext : DbContext
     }
 
     public DbSet<Movie> Movies => Set<Movie>();
+    public DbSet<Review> Reviews => Set<Review>();
 }

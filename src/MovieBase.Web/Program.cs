@@ -21,6 +21,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 SearchMoviesEndpoint.Map(app);
+ShowReviewsEndpoint.Map(app);
 
 using (var scope = app.Services.CreateScope())
 {
